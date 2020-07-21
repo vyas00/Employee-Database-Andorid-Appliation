@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Fragment One"
+        android:textColor="#1E53C1"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Id"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:id="@+id/et_id"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_name"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_deleteThisEmployee"
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Update INFO"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="add"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_display"
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:text="display"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+
+<!--        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Count: "
+            android:textColor="#000000"
+            android:textSize="18sp" />-->
+
+        <TextView
+            android:id="@+id/tv_ecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="clear database"
+        android:textSize="10sp" />
+
+
+
+</LinearLayout>
